@@ -1,0 +1,28 @@
+
+    <table class="answer-table" align="center">
+        <th class="answer-table" style="width:70%">
+            Word
+        </th>
+        <th class="answer-table" style="width:15%">
+            Score
+        </th>
+        <th class="answer-table" style="width:15%">
+            Letter
+        </th>
+        {% for word in words %}
+        <tr class="answer-table" >
+            <td class="answer-table-left">
+                <a href="https://www.merriam-webster.com/dictionary/{{word.word}}">{{word.word}}</a>
+            </td>
+            <td class="answer-table-center" >
+                {{word.score}}
+            </td>
+            <td class="answer-table-center" >
+                {{word.letter}}
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+<p>
+    Total: {{ total }}
+</p>

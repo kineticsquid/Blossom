@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<form action="/solve" method="POST" id="input-form">
+    <p>
+        <b>Six Petal Letters</b>
+    </p>
+    <table class="input-table" align="center">
+        <tr class="input-table" >
+            <td class="input-table" ><input type="textbox" value="{{petal0}}" name="petal0"/></td>
+            <td class="input-table" ><input type="textbox" value="{{petal1}}" name="petal1"/></td>
+            <td class="input-table" ><input type="textbox" value="{{petal2}}" name="petal2"/></td>
+            <td class="input-table" ><input type="textbox" value="{{petal3}}" name="petal3"/></td>
+            <td class="input-table" ><input type="textbox" value="{{petal4}}" name="petal4"/></td>
+            <td class="input-table" ><input type="textbox" value="{{petal5}}" name="petal5"/></td>
+        </tr>
+    </table>
+    <p>
+        <b>Center Letter</b>
+    </p>
+    <table class="input-table" align="center">
+        <tr class="input-table">
+            <td class="input-table"><input type="textbox" value="{{center}}" name="center"/></td>
+        </tr>
+
+    </table>
+    <button type="submit" form="input-form" value="Submit" formaction="/solve">Solve</button>
+    <button type="submit" form="input-form" value="Submit" formaction="/clear">Clear</button>
+    <!-- <button type="submit"><b>Solve</b></button> -->
+</form>
+<div>
+    {{ solution|safe()}}
+</div>
+
+{% endblock %}

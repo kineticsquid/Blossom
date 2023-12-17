@@ -1,0 +1,82 @@
+/* style.css
+ * This file provides css styles.
+ */
+
+html { background-color: #8b9ba4; } 
+
+h1 {text-align: center;
+    margin: 20px;
+}
+
+p {text-align: center;}
+
+.table.input-table {
+    width: 330px;
+}
+
+th.input-table, td.input-table {
+    text-align: center;
+    width: 50px;
+}
+
+tr.input-table {
+    height: 40px;
+}
+
+table.answer-table {
+    width: 330px;
+    border: 1px solid black;
+}
+
+th.answer-table {
+    text-align: left;
+    border: 1px solid black;
+}
+
+td.answer-table-left {
+    text-align: left;
+    border: 1px solid black;
+}
+
+td.answer-table-center {
+    text-align: center;
+    border: 1px solid black;
+}
+
+tr.answer-table {
+    border: 1px solid black;
+}
+
+body {
+    font-family: monospace;
+	  font-size: 120%;
+    background-color:  #6b7b84;
+    height: 95vh;
+    max-width: 375px;
+    margin: 0 auto;
+  }
+
+button {
+	font-family: monospace;
+	font-size: 100%;
+	border-radius: 4px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+	padding: 15px 140px;
+	text-align: center;
+	background-color: #aaaaaa;
+	position: relative;
+    margin: 30px auto;
+    display:block;
+}
+
+button:hover {
+    background-color: #888888;
+}
+
+input {
+    width: 30px;
+    height: 30px;
+    font-family: monospace;
+    font-size: 120%;
+    text-align: center;
+}
