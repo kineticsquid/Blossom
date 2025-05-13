@@ -5,12 +5,26 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: app.py",
-            "type": "python",
+            "name": "Python: blosson_app.py",
+            "type": "debugpy",
             "request": "launch",
             "program": "blossom_app.py",
             "console": "integratedTerminal",
-            "justMyCode": true
+            "justMyCode": true,
+            "env": {
+                "DICTIONARY_API_KEY": "a0e166af-a0d3-4220-bb35-249b45dd2073"
+            },
+        },
+        {
+            "name": "Python: test.py",
+            "type": "debugpy",
+            "request": "launch",
+            "program": "test.py",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "env": {
+                "DICTIONARY_API_KEY": "a0e166af-a0d3-4220-bb35-249b45dd2073"
+            },
         }
     ]
 }
